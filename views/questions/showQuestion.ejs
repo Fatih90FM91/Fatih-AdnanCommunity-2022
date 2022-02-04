@@ -1,0 +1,20 @@
+<%- include('../components/header') %>
+
+
+<% if(questions.length != 0){ %>
+    <% questions.forEach( question => { %>
+        <div class="showQuestion">
+        <div class="card-header">
+            This Answer is from : <span>Fatih</span>
+        </div>
+<div class="question">
+<h2><%= question.question %></h2>
+<p><%= question.description %></p>
+<a href="/show-question/<%= question.id %>">See More </a> 
+</div>
+</div>
+        <%    } )%>
+        <%    } %>
+
+
+<%- include('../components/footer') %>

@@ -1,0 +1,28 @@
+<%- include('../components/header') %>
+
+
+<div class="log">
+
+    <form method="POST" action="/edit-question/<%= question.id %>" class="log_form">
+      <div class="mb-3">
+        <label for="question" class="form-label">Question :</label>
+        <input value="<%= question.question %>" name="question" type="text" class="form-control" id="question">
+        <small class="form-text warning question">warning </small>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description :</label>
+        <input value="<%= question.description %>"  name="description" type="text" class="form-control" id="description">
+        <small class="form-text warning description">warning </small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="/">
+        <button type="button" class="btn btn-warning">Cancel</button>
+      </a>
+  
+    </form>
+  
+  </div>
+
+
+
+  <%- include('../components/footer') %>

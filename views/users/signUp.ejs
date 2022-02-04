@@ -1,0 +1,25 @@
+<%- include('../components/header') %>
+
+<div class="log">
+    <form method="POST" action="/signup" class="log_form">
+        <h2>Sign Up</h2>
+        <div class="mb-3">
+            <label for="userName" class="form-label">User Name</label>
+            <input name="userName" type="text" class="form-control" id="userName" >
+            <small class="form-text warning userName">Warning </small>
+        </div>
+        <div class="mb-3">
+            <label for="email2" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="email2" >
+            <small class="form-text warning email">Warning </small>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" id="password">
+            <small class="form-text warning password">Warning </small>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+</div>
+
+<%- include('../components/footer') %>
